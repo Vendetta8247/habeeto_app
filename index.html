@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Habeeto — Build Habits That Stick</title>
+    <meta name="description" content="Habeeto makes building good habits fun and rewarding. Track daily routines, build streaks, and crush your goals.">
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <a href="#" class="nav-brand">
+                    <img src="assets/app-icon.png" alt="Habeeto" class="brand-icon">
+                    Habeeto
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features" data-i18n="nav_features">Features</a></li>
+                    <li><a href="#how" data-i18n="nav_how">How It Works</a></li>
+                    <li><a href="#themes" data-i18n="nav_themes">Themes</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="lang-switcher">
+                        <button class="lang-chip active" data-lang-btn="en">EN</button>
+                        <button class="lang-chip" data-lang-btn="pt">PT</button>
+                        <button class="lang-chip" data-lang-btn="es">ES</button>
+                        <button class="lang-chip" data-lang-btn="uk">UA</button>
+                    </div>
+                    <button class="mode-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode"><svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg><svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg></button>
+                    <a href="#" class="nav-cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15.1 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                        <span data-i18n="nav_download">Download</span>
+                    </a>
+                </div>
+                <button class="nav-mobile-toggle" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="parallax-orb" data-parallax="-0.08" style="width:300px;height:300px;top:10%;left:-5%;background:radial-gradient(circle,var(--gold-dim),transparent 70%)"></div>
+            <div class="parallax-orb" data-parallax="0.12" style="width:200px;height:200px;bottom:15%;right:5%;background:radial-gradient(circle,var(--gold-dim),transparent 70%)"></div>
+            <div class="container">
+                <div class="hero-content fade-up">
+                    <div class="hero-badges">
+                        <div class="hero-badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/></svg> <span data-i18n="badge_ios">Available on iOS</span></div>
+                        <div class="hero-badge hero-badge-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg> <span data-i18n="badge_android">Android coming soon</span></div>
+                    </div>
+                    <h1 class="hero-title" data-i18n-html="hero_title">Build Habits That <span class="highlight">Actually Stick</span></h1>
+                    <p class="hero-description" data-i18n="hero_desc">Habeeto makes building good habits fun and rewarding. Track your daily routines, build powerful streaks, and crush your goals — with your personal habit companion.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15.1 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                            <span data-i18n="hero_cta">Download Free</span>
+                        </a>
+                        <a href="#features" class="btn-secondary" data-i18n="hero_learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-up">
+                    <div class="hero-glow"></div>
+                    <div class="hero-glow"></div>
+                    <div class="hero-glow"></div>
+                    <img src="assets/mascot.png" alt="Habeeto mascot" class="hero-mascot">
+                    <div class="phone-mockup">
+                        <img src="assets/screenshot.png" alt="Habeeto app screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="social-proof">
+            <div class="container fade-up">
+                <div class="proof-item">
+                    <span class="proof-value">3</span>
+                    <span class="proof-label" data-i18n="proof_modes">Tracking Modes</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-value">16</span>
+                    <span class="proof-label" data-i18n="proof_langs">Languages</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-value">16</span>
+                    <span class="proof-label" data-i18n="proof_themes">Themes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+            <div class="parallax-orb" data-parallax="0.06" style="width:250px;height:250px;top:5%;right:-8%;background:radial-gradient(circle,rgba(139,92,255,0.06),transparent 70%)"></div>
+            <div class="container fade-up">
+                <span class="section-label" data-i18n="feat_label">FEATURES</span>
+                <h2 class="section-title" data-i18n="feat_title">Everything you need to build better habits</h2>
+                <p class="section-subtitle" data-i18n="feat_subtitle">From simple daily check-ins to detailed analytics, Habeeto adapts to your style.</p>
+                <div class="features-grid">
+                    <div class="feature-card" data-color="gold">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div>
+                        <h3 data-i18n="feat_track_title">Three Tracking Modes</h3>
+                        <p data-i18n="feat_track_desc">Counter, checkmark, or timer — track any habit your way</p>
+                    </div>
+                    <div class="feature-card" data-color="purple">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div>
+                        <h3 data-i18n="feat_streak_title">Streaks With Stakes</h3>
+                        <p data-i18n="feat_streak_desc">Stay consistent with a unique lives system — miss a day, lose a bee friend</p>
+                    </div>
+                    <div class="feature-card" data-color="teal">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 16h8"/><path d="M7 11h12"/><path d="M7 6h3"/></svg></div>
+                        <h3 data-i18n="feat_goals_title">Smart Goals</h3>
+                        <p data-i18n="feat_goals_desc">Set weekly or monthly targets with "at least" and "no more than" directions</p>
+                    </div>
+                    <div class="feature-card" data-color="sky">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg></div>
+                        <h3 data-i18n="feat_achieve_title">Achievements & Medals</h3>
+                        <p data-i18n="feat_achieve_desc">Earn Bronze, Silver, and Gold medals as you build lasting habits</p>
+                    </div>
+                    <div class="feature-card" data-color="yellow">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
+                        <h3 data-i18n="feat_widget_title">Home Screen Widgets</h3>
+                        <p data-i18n="feat_widget_desc">Track and control habits right from your home screen</p>
+                    </div>
+                    <div class="feature-card" data-color="green">
+                        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"/></svg></div>
+                        <h3 data-i18n="feat_unlimited_title">Unlimited & Flexible</h3>
+                        <p data-i18n="feat_unlimited_desc">No limits on habits or goals — Habeeto grows with you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section" id="how">
+            <div class="container fade-up">
+                <span class="section-label" data-i18n="how_label">HOW IT WORKS</span>
+                <h2 class="section-title" data-i18n="how_title">Start tracking in seconds</h2>
+                <div class="how-grid">
+                    <div class="how-card">
+                        <div class="how-number">1</div>
+                        <h3 data-i18n="how_1_title">Create a Habit</h3>
+                        <p data-i18n="how_1_desc">Choose your habit type — counter, checkmark, or timer — and set your frequency.</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">2</div>
+                        <h3 data-i18n="how_2_title">Track Daily</h3>
+                        <p data-i18n="how_2_desc">Log your progress with a single tap. Habeeto remembers so you can focus on doing.</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">3</div>
+                        <h3 data-i18n="how_3_title">Build Streaks</h3>
+                        <p data-i18n="how_3_desc">Stay consistent and watch your streak grow. Your bee friends are counting on you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Streak Section -->
+        <section class="streak-section section">
+            <div class="parallax-orb" data-parallax="-0.1" style="width:350px;height:350px;bottom:0;left:-10%;background:radial-gradient(circle,var(--gold-dim),transparent 70%)"></div>
+            <div class="container fade-up">
+                <div class="streak-content">
+                    <span class="section-label" data-i18n="streak_label">STREAKS</span>
+                    <h2 class="section-title" data-i18n="streak_title">Your streak, your stakes</h2>
+                    <p class="section-subtitle" data-i18n="streak_subtitle">Habeeto's unique lives system makes streaks meaningful. Miss a day and a bee friend flies away — but keep going and they'll come back!</p>
+                    <div class="streak-features">
+                        <div class="streak-feature-item">
+                            <span class="streak-feature-icon"><img src="assets/bee-life.png" alt="Bee" class="streak-feature-bee"></span>
+                            <div>
+                                <h4 data-i18n="streak_lives_title">Lives System</h4>
+                                <p data-i18n="streak_lives_desc">Start with 3 bee lives. Miss a day, lose one. Stay consistent to earn them back.</p>
+                            </div>
+                        </div>
+                        <div class="streak-feature-item">
+                            <span class="streak-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 20-1.25-2.5L6 18"/><path d="M10 4 8.75 6.5 6 6"/><path d="m14 20 1.25-2.5L18 18"/><path d="m14 4 1.25 2.5L18 6"/><path d="m17 21-3-6h-4"/><path d="m17 3-3 6 1.5 3"/><path d="M2 12h6.5L10 9"/><path d="m20 10-1.5 2 1.5 2"/><path d="M22 12h-6.5L14 15"/><path d="m4 10 1.5 2L4 14"/><path d="m7 21 3-6-1.5-3"/><path d="m7 3 3 6h4"/></svg></span>
+                            <div>
+                                <h4 data-i18n="streak_freeze_title">Streak Freeze</h4>
+                                <p data-i18n="streak_freeze_desc">Going on vacation? Freeze your streak and pick up right where you left off.</p>
+                            </div>
+                        </div>
+                        <div class="streak-feature-item">
+                            <span class="streak-feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></span>
+                            <div>
+                                <h4 data-i18n="streak_cal_title">Calendar View</h4>
+                                <p data-i18n="streak_cal_desc">See your full history at a glance with an interactive calendar heatmap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="streak-demo" data-parallax="0.04">
+                    <div class="streak-header">
+                        <div class="streak-big-number">24</div>
+                        <div>
+                            <div class="streak-big-label" data-i18n="streak_day">day streak</div>
+                            <div class="streak-big-label" style="color:var(--gold)" data-i18n="streak_best">Personal best!</div>
+                        </div>
+                    </div>
+                    <div class="streak-calendar">
+                        <span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span>
+                        <span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day missed"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span>
+                        <span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day missed"></span>
+                        <span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day active"></span><span class="streak-day inactive"></span><span class="streak-day inactive"></span>
+                    </div>
+                    <div class="streak-lives">
+                        <span class="streak-lives-label" data-i18n="streak_lives">Lives</span>
+                        <span class="streak-bee-wrap"><img src="assets/bee-life.png" alt="Bee life" class="streak-bee"></span>
+                        <span class="streak-bee-wrap"><img src="assets/bee-life.png" alt="Bee life" class="streak-bee"></span>
+                        <span class="streak-bee-wrap lost"><img src="assets/bee-life.png" alt="Bee life" class="streak-bee"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Themes -->
+        <section class="section" id="themes">
+            <div class="container fade-up" style="text-align:center">
+                <span class="section-label" data-i18n="theme_label">THEMES</span>
+                <h2 class="section-title" data-i18n="theme_title">Make it truly yours</h2>
+                <p class="section-subtitle" style="margin:0 auto 0" data-i18n="theme_subtitle">Choose from 16 beautiful themes. Click to preview — watch the entire page transform.</p>
+                <div class="themes-grid">
+                    <div class="theme-chip active" style="background:#0A192F" title="Gold">
+                        <span class="theme-name-tooltip">Gold</span>
+                        <style>.theme-chip:nth-child(1)::after{background:#C6A87A}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#2C1A2F" title="Silver">
+                        <span class="theme-name-tooltip">Silver</span>
+                        <style>.theme-chip:nth-child(2)::after{background:#A9A9A9}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#0A1525" title="Sapphire">
+                        <span class="theme-name-tooltip">Sapphire</span>
+                        <style>.theme-chip:nth-child(3)::after{background:#FF7F50}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#1A0A28" title="Amethyst">
+                        <span class="theme-name-tooltip">Amethyst</span>
+                        <style>.theme-chip:nth-child(4)::after{background:#F0C060}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#0A1E1E" title="Coral">
+                        <span class="theme-name-tooltip">Coral</span>
+                        <style>.theme-chip:nth-child(5)::after{background:#FF6F61}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#12162A" title="Sunset">
+                        <span class="theme-name-tooltip">Sunset</span>
+                        <style>.theme-chip:nth-child(6)::after{background:#FFB088}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#0A1A12" title="Rose">
+                        <span class="theme-name-tooltip">Rose</span>
+                        <style>.theme-chip:nth-child(7)::after{background:#FF69B4}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#16161E" title="Midnight">
+                        <span class="theme-name-tooltip">Midnight</span>
+                        <style>.theme-chip:nth-child(8)::after{background:#00D4FF}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#1A1C1A" title="Slate">
+                        <span class="theme-name-tooltip">Slate</span>
+                        <style>.theme-chip:nth-child(9)::after{background:#9AFF5A}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#141216" title="Onyx">
+                        <span class="theme-name-tooltip">Onyx</span>
+                        <style>.theme-chip:nth-child(10)::after{background:#FF3399}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#131311" title="Financer">
+                        <span class="theme-name-tooltip">Financer</span>
+                        <style>.theme-chip:nth-child(11)::after{background:#FDD00E}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#1A1C2E" title="Ember">
+                        <span class="theme-name-tooltip">Ember</span>
+                        <style>.theme-chip:nth-child(12)::after{background:#EF233C}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#1A120B" title="Mocha">
+                        <span class="theme-name-tooltip">Mocha</span>
+                        <style>.theme-chip:nth-child(13)::after{background:#D4A373}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#0B1320" title="Arctic">
+                        <span class="theme-name-tooltip">Arctic</span>
+                        <style>.theme-chip:nth-child(14)::after{background:#A8DADC}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#1A0E2E" title="Lavender">
+                        <span class="theme-name-tooltip">Lavender</span>
+                        <style>.theme-chip:nth-child(15)::after{background:#B8A9C9}</style>
+                    </div>
+                    <div class="theme-chip" style="background:#151010" title="Copper">
+                        <span class="theme-name-tooltip">Copper</span>
+                        <style>.theme-chip:nth-child(16)::after{background:#B87333}</style>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="parallax-orb" data-parallax="0.08" style="width:300px;height:300px;top:10%;left:10%;background:radial-gradient(circle,var(--gold-dim),transparent 70%)"></div>
+            <div class="container fade-up">
+                <img src="assets/mascot_thumbs_up.png" alt="Habeeto mascot giving thumbs up" class="cta-mascot">
+                <h2 data-i18n="cta_title">Ready to build habits that last?</h2>
+                <p data-i18n="cta_desc">Join thousands building better routines with Habeeto. Free to download, no account required.</p>
+                <a href="#" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15.1 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    <span data-i18n="cta_btn">Download on the App Store</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="assets/app-icon.png" alt="Habeeto" class="brand-icon">
+                <span>Habeeto</span>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+                <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
+                <a href="mailto:habeeto.app@gmail.com" data-i18n="footer_support">Support</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Habeeto. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
