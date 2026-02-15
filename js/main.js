@@ -522,6 +522,22 @@ document.addEventListener('DOMContentLoaded', () => {
     chip.addEventListener('click', () => setLanguage(chip.getAttribute('data-lang-btn')));
   });
 
+  // Mobile menu toggle
+  const mobileToggle = document.querySelector('.nav-mobile-toggle');
+  if (mobileToggle && nav) {
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('mobile-open');
+      mobileToggle.innerHTML = nav.classList.contains('mobile-open') ? '&#10005;' : '&#9776;';
+    });
+    // Close on link tap
+    document.querySelectorAll('.mobile-menu a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('mobile-open');
+        mobileToggle.innerHTML = '&#9776;';
+      });
+    });
+  }
+
   // Restore saved language
   const saved = localStorage.getItem('habeeto_lang');
   if (saved && i18n[saved]) {
