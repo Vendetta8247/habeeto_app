@@ -280,10 +280,6 @@ img {
   box-shadow: 0 4px 20px color-mix(in srgb, var(--gold) 30%, transparent);
 }
 
-.nav-cta-icon {
-  padding: 10px;
-  border-radius: 50%;
-}
 
 .nav-mobile-toggle {
   display: none;
@@ -1237,8 +1233,7 @@ img {
   }
 
   .nav-right .lang-switcher,
-  .nav-right .nav-cta,
-  .nav-right .nav-cta-icon {
+  .nav-right .nav-cta {
     display: none;
   }
 
