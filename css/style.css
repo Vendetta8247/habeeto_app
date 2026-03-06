@@ -280,6 +280,11 @@ img {
   box-shadow: 0 4px 20px color-mix(in srgb, var(--gold) 30%, transparent);
 }
 
+.nav-cta-icon {
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .nav-mobile-toggle {
   display: none;
   background: none;
@@ -1033,6 +1038,14 @@ img {
   line-height: 1.7;
 }
 
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .cta-section .btn-primary {
   font-size: 1.05rem;
   padding: 18px 36px;
@@ -1224,7 +1237,8 @@ img {
   }
 
   .nav-right .lang-switcher,
-  .nav-right .nav-cta {
+  .nav-right .nav-cta,
+  .nav-right .nav-cta-icon {
     display: none;
   }
 
@@ -1279,6 +1293,8 @@ img {
     justify-content: space-between;
     padding-top: 12px;
     border-top: 1px solid color-mix(in srgb, var(--text) 8%, transparent);
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .mobile-menu .nav-cta {
