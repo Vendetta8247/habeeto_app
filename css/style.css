@@ -33,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1236,13 +1237,13 @@ img {
     display: none;
   }
 
-  .nav-right .lang-switcher,
-  .nav-right .nav-cta {
+  .nav-right {
     display: none;
   }
 
   .nav-mobile-toggle {
     display: block;
+    flex-shrink: 0;
   }
 
   /* Mobile menu dropdown */
@@ -1300,7 +1301,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 10px 22px;
+    padding: 10px 14px;
     background: var(--gold);
     color: var(--accent-text);
     border-radius: 100px;
