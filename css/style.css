@@ -280,6 +280,10 @@ img {
   box-shadow: 0 4px 20px color-mix(in srgb, var(--gold) 30%, transparent);
 }
 
+.nav-cta-icon {
+  padding: 10px 14px;
+}
+
 
 .nav-mobile-toggle {
   display: none;
