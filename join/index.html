@@ -60,7 +60,11 @@
             var path = window.location.pathname;
             var parts = path.split('/');
             var code = parts[parts.length - 1] || parts[parts.length - 2];
-            if (!code || code === 'join') return;
+            if (!code || code === 'join' || code === 'habeeto_app') {
+                var params = new URLSearchParams(window.location.search);
+                code = params.get('code');
+            }
+            if (!code) return;
 
             // Try to open the app via custom scheme
             var appUrl = 'habeeto://join/' + code;
@@ -98,7 +102,12 @@
         var path = window.location.pathname;
         var parts = path.split('/');
         var code = parts[parts.length - 1] || parts[parts.length - 2];
-        if (code && code !== 'join') {
+        // Also check query param (from 404 redirect)
+        if (!code || code === 'join' || code === 'habeeto_app') {
+            var params = new URLSearchParams(window.location.search);
+            code = params.get('code');
+        }
+        if (code && code !== 'join' && code !== 'habeeto_app') {
             document.getElementById('inviteCode').textContent = code;
         }
     </script>

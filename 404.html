@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habeeto</title>
+    <script>
+        // GitHub Pages serves this for any unknown path
+        // Redirect /join/{code} to /join/index.html with the code preserved
+        var path = window.location.pathname;
+        if (path.indexOf('/habeeto_app/join/') === 0) {
+            // Already on the right path, load join page content
+            window.location.replace('/habeeto_app/join/' + '?code=' + path.split('/').pop());
+        } else {
+            window.location.replace('/habeeto_app/');
+        }
+    </script>
+</head>
+<body></body>
+</html>
