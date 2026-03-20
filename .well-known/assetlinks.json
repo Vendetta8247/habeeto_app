@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ua.kantel.habito",
+      "sha256_cert_fingerprints": [
+        "F3:CC:C7:5D:FC:6C:F9:C7:24:E2:A8:59:5D:FC:75:40:82:80:7B:D9"
+      ]
+    }
+  }
+]

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Challenge — Habeeto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a192f;
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .card {
+            background: rgba(255,255,255,0.06);
+            border-radius: 24px;
+            padding: 40px 32px;
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .logo { font-size: 48px; margin-bottom: 16px; }
+        h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { font-size: 14px; color: rgba(240,240,240,0.6); margin-bottom: 24px; line-height: 1.5; }
+        .code {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            color: #c6a87a;
+            margin-bottom: 24px;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+        }
+        .buttons { display: flex; flex-direction: column; gap: 12px; }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 24px;
+            border-radius: 14px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.85; }
+        .btn-android { background: #34A853; color: white; }
+        .btn-ios { background: #007AFF; color: white; }
+        .btn-icon { font-size: 20px; }
+        .footer { margin-top: 24px; font-size: 12px; color: rgba(240,240,240,0.35); }
+    </style>
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            var parts = path.split('/');
+            var code = parts[parts.length - 1] || parts[parts.length - 2];
+            if (!code || code === 'join') return;
+
+            // Try to open the app via custom scheme
+            var appUrl = 'habeeto://join/' + code;
+            var ua = navigator.userAgent.toLowerCase();
+
+            // On mobile, try the deep link first
+            if (/iphone|ipad|ipod/.test(ua)) {
+                window.location = appUrl;
+                setTimeout(function() {
+                    window.location = 'https://apps.apple.com/us/app/habeeto-habit-tracker/id6758642433';
+                }, 1500);
+            } else if (/android/.test(ua)) {
+                window.location = 'intent://join/' + code + '#Intent;scheme=habeeto;package=ua.kantel.habito;end';
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">🐝</div>
+        <h1>Join a Challenge</h1>
+        <p class="subtitle">Someone invited you to a challenge on Habeeto! Open the app or download it to join.</p>
+        <div class="code" id="inviteCode"></div>
+        <div class="buttons">
+            <a href="https://play.google.com/store/apps/details?id=ua.kantel.habito" class="btn btn-android">
+                <span class="btn-icon">▶</span> Get it on Google Play
+            </a>
+            <a href="https://apps.apple.com/us/app/habeeto-habit-tracker/id6758642433" class="btn btn-ios">
+                <span class="btn-icon">🍎</span> Download on App Store
+            </a>
+        </div>
+        <p class="footer">Habeeto — Build better habits together</p>
+    </div>
+    <script>
+        var path = window.location.pathname;
+        var parts = path.split('/');
+        var code = parts[parts.length - 1] || parts[parts.length - 2];
+        if (code && code !== 'join') {
+            document.getElementById('inviteCode').textContent = code;
+        }
+    </script>
+</body>
+</html>

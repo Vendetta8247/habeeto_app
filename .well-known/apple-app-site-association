@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "X44M96US3E.ua.kantel.habito.Habito",
+        "paths": ["/join/*"]
+      }
+    ]
+  }
+}
